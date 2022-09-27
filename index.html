@@ -20,12 +20,17 @@
    ================================================== -->
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">     
+   <link rel="stylesheet" href="css/vendor.css">   
+   <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+rel="stylesheet"
+href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>  
 
    <!-- script
    ================================================== -->   
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
+	<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <!--     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153937526-1"></script> -->
@@ -35,6 +40,8 @@
         gtag('js', new Date());
         gtag('config', 'UA-153937526-1');
     </script>
+
+
 
    <!-- favicons ================================================== -->
 	<link rel="icon" type="image/png" href="favicon.png">
@@ -295,6 +302,28 @@
    	</div> <!-- /resume-timeline -->
 		
 	</section> <!-- /features -->
+
+	<section id="gitback">
+
+        <div style="text-align:center;"><h1>Days I Code</h1></div>
+		<div class="calendar" style="color: black;">
+			<!-- Loading stuff -->
+			Loading the data just for you.
+		</div>
+		
+		<script>
+			GitHubCalendar(".calendar", "ankit24695");
+			// or enable responsive functionality
+			GitHubCalendar(".calendar", "ankit24695", { responsive: true });
+		</script>  		
+ 
+	
+ 
+				
+			
+	
+ 
+	</section>
 
 
 	<!-- Portfolio Section

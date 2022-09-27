@@ -2560,4 +2560,12 @@ footer .copyright span:last-child::after {
 	background: #000000;
 }
 
+
+#gitback {
+	background: rgb(253, 247, 247);
+	padding-top: 12rem;
+	padding-bottom: 2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
 /*# sourceMappingURL=main.css.map */
